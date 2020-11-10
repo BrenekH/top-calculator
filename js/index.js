@@ -34,36 +34,16 @@ function setup() {
 	displayController.updateDisplay();
 
 	// Setup event listeners
-	document.getElementById("num-0").addEventListener("click", () => {
-		inputNumber(0);
-	});
-	document.getElementById("num-1").addEventListener("click", () => {
-		inputNumber(1);
-	});
-	document.getElementById("num-2").addEventListener("click", () => {
-		inputNumber(2);
-	});
-	document.getElementById("num-3").addEventListener("click", () => {
-		inputNumber(3);
-	});
-	document.getElementById("num-4").addEventListener("click", () => {
-		inputNumber(4);
-	});
-	document.getElementById("num-5").addEventListener("click", () => {
-		inputNumber(5);
-	});
-	document.getElementById("num-6").addEventListener("click", () => {
-		inputNumber(6);
-	});
-	document.getElementById("num-7").addEventListener("click", () => {
-		inputNumber(7);
-	});
-	document.getElementById("num-8").addEventListener("click", () => {
-		inputNumber(8);
-	});
-	document.getElementById("num-9").addEventListener("click", () => {
-		inputNumber(9);
-	});
+	document.getElementById("num-0").addEventListener("click", () => { inputNumber(0); });
+	document.getElementById("num-1").addEventListener("click", () => { inputNumber(1); });
+	document.getElementById("num-2").addEventListener("click", () => { inputNumber(2); });
+	document.getElementById("num-3").addEventListener("click", () => { inputNumber(3); });
+	document.getElementById("num-4").addEventListener("click", () => { inputNumber(4); });
+	document.getElementById("num-5").addEventListener("click", () => { inputNumber(5); });
+	document.getElementById("num-6").addEventListener("click", () => { inputNumber(6); });
+	document.getElementById("num-7").addEventListener("click", () => { inputNumber(7); });
+	document.getElementById("num-8").addEventListener("click", () => { inputNumber(8); });
+	document.getElementById("num-9").addEventListener("click", () => { inputNumber(9); });
 
 	document.getElementById("add-button").addEventListener("click", () => { addOperation("+"); });
 	document.getElementById("subtract-button").addEventListener("click", () => { addOperation("-"); });
@@ -117,7 +97,6 @@ function addOperation(opString) {
 	if (displayController.negativeActive) {
 		num *= -1;
 	}
-
 	operationArray.push(num);
 	operationArray.push(opString);	// +, -, *, /
 
