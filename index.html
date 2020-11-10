@@ -6,9 +6,12 @@
 		<link rel="stylesheet" href="css/main.css">
 		<script src="js/index.js"></script>
 	</head>
-	<body>
+	<body onload="setup();">
 		<div id="calc-container">
-			<p id="display">Test</p>
+			<div id="display-container">
+				<p class="display-portion" id="negative-display">&nbsp;</p>
+				<p class="display-portion" id="display"></p>
+			</div>
 			<div id="buttons-container">
 				<!-- Row 1 -->
 				<div></div>
@@ -38,7 +41,7 @@
 				<div class="calc-button num-button" id="num-0">0</div>
 				<div class="calc-button" id="floating-point">.</div>
 				<div class="calc-button" id="negative-toggle">-</div>
-				<div class="calc-button operation-button" id="execute-oparation">=</div>
+				<div class="calc-button operation-button" id="execute-operation">=</div>
 			</div>
 		</div>
 	</body>
