@@ -59,8 +59,9 @@ function setup() {
 		displayController.updateDisplay();
 	});
 	document.getElementById("floating-point").addEventListener("click", () => {
-		// TODO: Implement
-		console.log(".");
+		if (displayController.displayValue.indexOf(".") === -1) {
+			inputNumber(".");
+		}
 	});
 	document.getElementById("negative-toggle").addEventListener("click", () => {
 		if (displayController.negativeActive) {
@@ -93,7 +94,7 @@ function inputNumber(inNum) {
 }
 
 function addOperation(opString) {
-	let num = parseInt(displayController.displayValue);
+	let num = parseFloat(displayController.displayValue);
 	if (displayController.negativeActive) {
 		num *= -1;
 	}
