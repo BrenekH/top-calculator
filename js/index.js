@@ -11,7 +11,7 @@ const displayController = {
 		}
 		if (this.displayValue.length > 11) {
 			let displayArray = this.displayValue.split("");
-			displayArray.pop();
+			displayArray.splice(11, displayArray.length - 10);
 			this.displayValue = displayArray.join("");
 		}
 		if (this.negativeActive) {
