@@ -26,6 +26,14 @@ body {
 	cursor: pointer;
 }
 
+.calc-button:hover {
+	transform: scale(1.1);
+}
+
+.calc-button:active {
+	transform: scale(0.9);
+}
+
 .operation-button {
 	background-color: orange;
 	color: #2e2e2e;
