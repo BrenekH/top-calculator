@@ -4,7 +4,7 @@ Calculator using client-side javascript.
 
 ## Try for yourself
 
-This is hosted on GitHub pages at [https://zpaw.github.io/top-calculator/](https://zpaw.github.io/top-calculator/).
+This is hosted on GitHub pages at [https://brenekh.github.io/top-calculator/](https://brenekh.github.io/top-calculator/).
 
 ## Origin
 
